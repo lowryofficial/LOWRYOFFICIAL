@@ -194,6 +194,92 @@ section {
     max-width: 850px;
 }
 
+    /* ALBUM */
+
+#album {
+    background:
+        radial-gradient(circle at 20% 50%, rgba(112,65,31,.18) 0%, transparent 42%),
+        linear-gradient(180deg, #111111 0%, #080808 100%);
+    border-top: 1px solid #242424;
+    border-bottom: 1px solid #242424;
+}
+
+.album-layout {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(280px, 480px) 1fr;
+    gap: 8%;
+    align-items: center;
+}
+
+.album-art img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #3a3028;
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.75),
+        0 0 45px rgba(140,76,32,.10);
+}
+
+.album-title {
+    font-family: Georgia, serif;
+    font-size: clamp(46px, 8vw, 88px);
+    line-height: .95;
+    color: #e1ded6;
+    margin-top: 15px;
+}
+
+.album-line {
+    width: 90px;
+    height: 3px;
+    background: #9b6945;
+    margin: 35px 0;
+}
+
+.album-tagline {
+    font-family: Georgia, serif;
+    font-size: clamp(24px, 4vw, 34px);
+    line-height: 1.4;
+    color: #d0c6bb;
+}
+
+.album-copy {
+    max-width: 570px;
+    margin-top: 25px;
+    color: #999;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.album-status {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 22px;
+    border: 1px solid #554233;
+    color: #b78a66;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 750px) {
+
+    .album-layout {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .album-art {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .album-info {
+        text-align: left;
+    }
+}
+
 /* SCARS */
 
 #scars {
@@ -390,7 +476,44 @@ footer {
     </p>
 
 </section>
+<section id="album">
 
+    <div class="album-layout">
+
+        <div class="album-art">
+            <img src="8225B689-0742-41D1-BE93-8976686A7337.png" alt="LOWRY - I GOT SCARS album cover">
+        </div>
+
+        <div class="album-info">
+
+            <div class="section-label">
+                THE ALBUM
+            </div>
+
+            <h2 class="album-title">
+                I GOT SCARS
+            </h2>
+
+            <div class="album-line"></div>
+
+            <p class="album-tagline">
+                The record that started the story.
+            </p>
+
+            <p class="album-copy">
+                Songs about the things we carry, the things we survive,
+                and the scars no one else can see.
+            </p>
+
+            <div class="album-status">
+                AVAILABLE NOW
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <section id="scars">
 
