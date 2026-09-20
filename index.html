@@ -253,14 +253,36 @@ section {
     line-height: 1.8;
 }
 
-.album-status {
-    display: inline-block;
+.streaming-links {
     margin-top: 40px;
-    padding: 15px 22px;
-    border: 1px solid #554233;
+}
+
+.streaming-label {
     color: #b78a66;
     font-size: 11px;
     letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+
+.stream-button {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 12px;
+    padding: 16px 22px;
+    border: 1px solid #554233;
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+
+.stream-button:hover {
+    background: #b78a66;
+    color: #090909;
+    border-color: #b78a66;
+    transform: translateX(4px);
 }
 
 @media (max-width: 750px) {
@@ -505,9 +527,23 @@ footer {
                 and the scars no one else can see.
             </p>
 
-            <a class="album-status" href="https://open.spotify.com/album/4x66Fr0LUH5w2PltrCNlet" target="_blank">
-                AVAILABLE NOW
-            </a>
+            <div class="streaming-links">
+
+    <div class="streaming-label">AVAILABLE NOW</div>
+
+    <a class="stream-button" href="https://open.spotify.com/album/4x66Fr0LUH5w2PltrCNlet" target="_blank" rel="noopener">
+        ◉ SPOTIFY
+    </a>
+
+    <a class="stream-button" href="https://music.apple.com/us/album/i-got-scars/6793735488" target="_blank" rel="noopener">
+         APPLE MUSIC
+    </a>
+
+    <a class="stream-button" href="https://amazon.com/music/player/albums/B0HB18V9KY" target="_blank" rel="noopener">
+        ♪ AMAZON MUSIC
+    </a>
+
+</div>
 
         </div>
 
